@@ -14,6 +14,7 @@ app.use(
 app.use(express.json());
 app.use(express.static("public"));
 
-app.use("/api/v1/health", healthRouter);
+app.use("/api/v1", healthRouter);
+// app.use("/api/v1/health", healthRouter);
 
 export { app };
